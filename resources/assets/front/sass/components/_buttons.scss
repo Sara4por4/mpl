@@ -1,0 +1,68 @@
+.btn{
+  position: relative;
+  min-width: 90px;
+  max-width: 260px;
+  line-height: 40px;
+  letter-spacing: .25em;
+  font-size: 12px;
+  font-weight: $font-weight-semibold;
+  text-transform: uppercase;
+  text-align: center;
+  background-color: $white-color;
+  border-radius: 0;
+  text-align: center;
+  transition: all .3s ease-in;
+  outline: none;
+  padding: 0 25px;
+  border: 1px solid $black-color;
+  @extend .transition;
+
+  span{
+    margin: 0 25px;
+  }
+
+  &--center{
+    margin: 50px auto 80px;
+    display: block;
+  }
+  &--black{
+    background-color: black;
+    color: white;
+    &:focus,
+    &:hover{
+      background-color: white;
+      color: black;
+    }
+  }
+  &--top{
+    margin-top:  60px;
+  }
+
+  &:focus,
+  &:hover{
+    outline: none;
+    background-color: black;
+    color: white;
+  }
+}
+
+.link{
+   font-weight: $font-weight-semibold;
+   letter-spacing: .2em;
+   font-size: 12px;
+   line-height: 30px;
+   transition: all .3s;
+   text-decoration: underline;
+   text-transform: uppercase;
+   @extend .transition;
+
+  &:focus,
+  &:hover{
+    padding-left: 20px;
+    opacity: .6;
+
+    .icon{
+      // color: $pink-color !important;
+    }
+  }
+}

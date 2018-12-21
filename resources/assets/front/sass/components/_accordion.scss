@@ -1,0 +1,38 @@
+.accordion{
+  background-color: transparent;
+  transition: .3s all;
+
+  &:nth-of-type(n+2){
+    margin-top: 25px;
+  }
+
+  &__title{
+    border-bottom: 1px solid $black-color;
+    font-weight: $font-weight-semibold;
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 1.6px;
+
+    .closed{
+      display: none;
+    }
+
+  }
+  &__body{
+    margin-top: 20px;
+  }
+  &__header{
+
+    &:hover{
+      opacity: .6;
+    }
+    &.active{
+      .open{
+        display: none;
+      }
+      .closed{
+        display: inline-block;
+      }
+    }
+  }
+}

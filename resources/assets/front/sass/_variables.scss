@@ -1,0 +1,52 @@
+
+/**
+ * Colors
+ */
+$colors: (
+    'black'             : #131413,
+    'light-bege'        : #fdf9f7,
+    'bege'              : #faf0eb,
+    'light-pink'        : #ECC3B2,
+    'pink'              : #A85566,
+    'yellow'            : #FFD100,
+    'blue'              : #A0D1CA,
+    'purple'            : #C7B2DE,
+    'white'             : #fff,
+);
+
+/**
+ * Color applications
+ */
+
+ $black-color                 : map-get($colors, 'black');
+ $white-color                 : map-get($colors, 'white');
+ $light-bege-color            : map-get($colors, 'light-bege');
+ $bege-color                  : map-get($colors, 'bege');
+ $light-pink-color            : map-get($colors, 'light-pink');
+ $pink-color                  : map-get($colors, 'pink');
+ $yellow-color                : map-get($colors, 'yellow');
+ $blue-color                  : map-get($colors, 'blue');
+ $purple-color                : map-get($colors, 'purple');
+
+
+
+// Typography
+$font-family-icons: "material-design-iconic-font";
+$font-family-primary: 'Montserrat', sans-serif;
+$font-family-secondary: 'Cormorant Garamond', serif;
+$font-size-base: 14px;
+$line-height-base: 1.6;
+
+$font-weight-regular: 400;
+$font-weight-semibold: 600;
+$font-weight-bold: 700;
+
+// Body
+$body-bg: #fff;
+
+// Navbar
+$navbar-default-bg: #fff;
+
+
+// Panels
+$panel-default-heading-bg: #fff;

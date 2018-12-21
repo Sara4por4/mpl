@@ -1,0 +1,38 @@
+.user-intro{
+
+   &__title{
+      margin-bottom: 25px;
+   }
+   &__content{
+      margin-top: 40px;
+
+      @media (min-width: $screen-md-min) {
+         max-width: 263px;
+      }
+
+      &.register{
+         max-width: 100%;
+      }
+   }
+   &__wrap{
+      &:nth-of-type(n+2){
+         margin-top: 100px;
+      }
+      .small-text{
+         font-size: 12px;
+         color: #999999;
+         margin-bottom: 25px;
+
+         @media (min-width: $screen-md-min) {
+            max-width: 60%;
+         }
+      }
+   }
+   &__division{
+      border-bottom: 1px solid black;
+      padding-bottom: 10px;
+      margin-bottom: 35px;
+
+   }
+
+}
