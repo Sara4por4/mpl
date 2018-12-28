@@ -58,15 +58,7 @@
         <ul class="shipping-list">
           <li>
             <input type="radio" name="" value="">
-            <label for="">Direct Bank Transfer</label>
-          </li>
-          <li>
-            <input type="radio" name="" value="">
             <label for="">Credit Card</label>
-          </li>
-          <li>
-            <input type="radio" name="" value="">
-            <label for="">Paypal</label>
           </li>
         </ul>
       </div>

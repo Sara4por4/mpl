@@ -16832,12 +16832,12 @@ a:hover {
 }
 
 .checkout-info__info .col-sm-4:nth-of-type(n+2) {
-  margin-top: 0;
+  margin-top: 30px;
 }
 
 @media (min-width: 768px) {
   .checkout-info__info .col-sm-4:nth-of-type(n+2) {
-    margin-top: 30px;
+    margin-top: 0;
   }
 }
 
