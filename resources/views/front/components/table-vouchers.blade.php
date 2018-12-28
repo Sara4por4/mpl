@@ -1,4 +1,5 @@
-<table class="table table--vouchers ttable-responsive">
+<div class="table-responsive">
+<table class="table table--vouchers">
   <thead>
     <tr>
       <th scope="col"><p>Voucher No.</p></th>
@@ -22,3 +23,4 @@
     </tr>
   </tbody>
 </table>
+</div>

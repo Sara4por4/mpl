@@ -44,7 +44,7 @@
             <!-- search form -->
 
           </li>
-          <li><a href="{{url('/')}}">Bag (0)</a></li>
+          <li><a href="{{url('/bag')}}">Bag (0)</a></li>
           <li><a href="{{url('/login')}}">My account</a></li>
         </ul>
         <!-- right menu -->
@@ -254,6 +254,7 @@ $(document).ready(function() {
          $('body').css('margin-top','256px');
          $('.navbar').addClass('navbar-fixed-top');
          $('.navbar__bottom').addClass('collapse');
+         $('.navbar__user-wrap').addClass('collapse');
          $('.navbar--desktop .icon--menu').css('display','block');
 
          function openNav() {
@@ -266,6 +267,7 @@ $(document).ready(function() {
       	$('.navbar').removeClass('navbar-fixed-top');
          $('.navbar').removeClass('top');
          $('body').css('margin-top','0');
+         $('.navbar__user-wrap').removeClass('collapse');
         $('.navbar--desktop .navbar__bottom').removeClass('collapse');
         $('.navbar--desktop .icon--close').removeClass('active');
         $('.navbar--desktop .icon--menu').css('display','none');

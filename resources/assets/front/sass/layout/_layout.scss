@@ -10,7 +10,12 @@ body{
 #landing-page{
    background-color: white;
 }
-
+.divider{
+  height: 1px;
+  width: 100%;
+  background-color: $black-color;
+  border:none;
+}
 .wrapper{
    @extend .transition;
    &.active{

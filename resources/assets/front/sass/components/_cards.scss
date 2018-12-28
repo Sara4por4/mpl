@@ -1,3 +1,27 @@
+.myworkshop-card{
+  max-width: 700px;
+
+  &__img{
+    height: 200px;
+    width:25%;
+    @extend .full-img;
+  }
+  &__img,
+  &__caption{
+    float: left;
+    display: inline-block;
+    vertical-align: middle;
+  }
+
+  &__caption{
+    width: 70%;
+    padding-left: 5%;
+
+    .small-text{
+      margin-top: 30px;
+    }
+  }
+}
 .user-review{
   margin-bottom: 50px;
 

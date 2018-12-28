@@ -11,7 +11,10 @@ $colors: (
     'yellow'            : #FFD100,
     'blue'              : #A0D1CA,
     'purple'            : #C7B2DE,
+    'grey'             : #d7d7d7,
     'white'             : #fff,
+    'rose'             : #eeccbd,
+
 );
 
 /**
@@ -27,6 +30,8 @@ $colors: (
  $yellow-color                : map-get($colors, 'yellow');
  $blue-color                  : map-get($colors, 'blue');
  $purple-color                : map-get($colors, 'purple');
+ $grey-color                : map-get($colors, 'grey');
+ $rose-color                : map-get($colors, 'rose');
 
 
 

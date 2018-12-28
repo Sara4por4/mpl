@@ -223,7 +223,15 @@
          padding: 25px;
        }
     }
-
+    .navbar__user{
+      padding: 5px 10px;
+      border-top: .4px solid $grey-color;
+      li{
+        display: block;
+        float: none;
+        margin-left: 0;
+      }
+    }
     .navbar__submenu{
       margin: 0;
       > li > a {

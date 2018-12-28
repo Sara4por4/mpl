@@ -109,8 +109,28 @@ Route::get('/vouchers', function () {
     return view('front.pages.vouchers.index');
 });
 
+Route::get('/history', function () {
+    return view('front.pages.history.index');
+});
+
+Route::get('/bag', function () {
+    return view('front.pages.bag.index');
+});
+
 Route::get('/myworkshops', function () {
     return view('front.pages.myworkshops.index');
+});
+
+Route::get('/checkout', function () {
+    return view('front.pages.checkout.index');
+});
+
+Route::get('/checkout-2', function () {
+    return view('front.pages.checkout-2.index');
+});
+
+Route::get('/changepass', function () {
+    return view('front.pages.changepass.index');
 });
 
 Route::get('/myworkshops-detail', function () {

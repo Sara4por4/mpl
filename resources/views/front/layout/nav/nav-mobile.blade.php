@@ -140,6 +140,15 @@
      </ul>
      <!-- End Menu -->
 
+     <ul class="navbar__user">
+        <li><a href="{{url('/personal-info')}}">My personal details</a></li>
+        <li><a href="{{url('/history')}}">My order history</a></li>
+        <li><a href="{{url('/vouchers')}}">My vouchers</a></li>
+        <li><a href="{{url('/myworkshops')}}">My workshops</a></li>
+        <li><a href="{{url('/changepass')}}">Change Password</a></li>
+        <li><a href="{{url('/')}}">Logout</a></li>
+     </ul>
+
     <ul class="navbar__footer-menu">
       <li>
         <a href="{{url('/footer-page')}}">FAQs</a>

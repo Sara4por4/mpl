@@ -1,8 +1,74 @@
 .table{
 
+  .collapse{
+    display: none;
+  }
+  .show{
+    display: table-row !important;
+  }
+  .ref{
+    color: grey;
+    font-size: 14px;
+    line-height: 16px;
+  }
+  &__collapsed{
+    padding: 40px 15px;
+    width: 100%;
+    background-color: rgba(238, 204, 189, 0.15);
+    td{
+      padding: 20px 0;
+    }
+    tr:not(:last-child){
+      border-bottom: 1px solid $rose-color;
+    }
+    .shipping,
+    .total{
+      border-bottom: 1px solid $grey-color !important;
+    }
+    .info{
+      &__title{
+        margin-bottom: 15px;
+      }
+    }
+  }
+  &--history{
+    margin-bottom: 0;
+  }
+  &--workshops{
+    thead{
+      margin-bottom: 40px;
+
+      >tr{
+         border-bottom: none;
+
+         >th{
+             font-size: 14px;
+            text-transform: uppercase;
+            border-bottom: none;
+         }
+      }
+    }
+    tbody {
+      border-top: none;
+      border-bottom: none;
+
+      > tr > td{
+        border-top: none;
+        border-bottom: none;
+      }
+      > tr > td:not(:last-child){
+        border-top: none;
+        border-bottom: none;
+        border-right: .4px solid $grey-color;
+      }
+    }
+  }
+  &--bag,
+  &--history,
    &--vouchers{
    > thead{
-      margin-bottom: 80px;
+      border-bottom: 60px solid transparent;
+
       >tr{
          border-bottom: none;
 
@@ -14,11 +80,18 @@
       }
    }
    > tbody{
-      border-bottom: 1px solid black;
+      border-bottom: 1px solid $black-color;
+
       >tr{
+        border-bottom: .4px solid $black-color;
+        >td{
+          *{
+          vertical-align: top;
+          }
+        }
          >th,
          >td{
-            // border-bottom: none;
+           border-top: none;
             line-height: 90px;
          }
       }
@@ -26,9 +99,11 @@
    }
 
    .state{
+     &--sent,
       &--valid{
          color: #009900;
       }
+      &--processing,
       &--expired{
          color: #ff0000;
          font-style: italic;

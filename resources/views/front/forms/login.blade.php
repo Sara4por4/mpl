@@ -16,7 +16,7 @@
 
 
   <div class="form__footer">
-    <button type="send" name="button" class="btn">Login</button>
+    <a href="personal-info" class="btn">Login</a>
     <a href="" class="form__link">Lost your password?</a>
   </div>
 </form>

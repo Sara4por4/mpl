@@ -34,7 +34,7 @@
     <body>
 
 
-   @if(Request::is('login') || Request::is('personal-info') || Request::is('history') || Request::is('vouchers') || Request::is('myworkshops'))
+   @if(Request::is('login') || Request::is('personal-info') || Request::is('history') || Request::is('vouchers') || Request::is('myworkshops') || Request::is('myworkshops-detail') || Request::is('checkout') || Request::is('checkout-2') || Request::is('changepass') || Request::is('bag'))
    @include('front.layout.nav.nav-user')
    @else
    @include('front.layout.nav.nav')
