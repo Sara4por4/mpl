@@ -8,7 +8,7 @@
     display: none;
 
     @media (min-width: $screen-sm-min) {
-      display: inline-block;
+      display: block;
     }
 
     h4{
@@ -20,10 +20,7 @@
 
     &.active{
       display: block;
-
-      @media (min-width: $screen-sm-min) {
-        display: inline-block;
-      }
+      
       &::before{
         content: '';
         width: 10px;

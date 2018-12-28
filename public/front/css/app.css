@@ -16534,6 +16534,7 @@ a:hover {
 }
 
 .table--workshops thead {
+  border-bottom: 60px solid transparent;
   margin-bottom: 40px;
 }
 
@@ -16654,7 +16655,7 @@ a:hover {
 
 @media (min-width: 768px) {
   .cart__btns {
-    text-align: initial;
+    text-align: right;
   }
 }
 
@@ -16749,7 +16750,7 @@ a:hover {
 
 @media (min-width: 768px) {
   .cart-widget__step {
-    display: inline-block;
+    display: block;
   }
 }
 
@@ -16762,12 +16763,6 @@ a:hover {
 
 .cart-widget__step.active {
   display: block;
-}
-
-@media (min-width: 768px) {
-  .cart-widget__step.active {
-    display: inline-block;
-  }
 }
 
 .cart-widget__step.active::before {

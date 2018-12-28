@@ -75,10 +75,10 @@
 
 <div class="cart__footer">
   <div class="cart__total row">
-    <div class="col-sm-4 col-xs-6">
+    <div class="col-sm-8 col-xs-6">
       <h4><span>Total</span></h4>
     </div>
-    <div class="col-sm-8 col-xs-6">
+    <div class="col-sm-4 col-xs-6">
       <h4>123€</h4>
     </div>
   </div>
