@@ -1,7 +1,7 @@
-
 // Fonts
 @import "libs/material/css/material-design-iconic-font";
-@import "fonts/fonts";
+@import url('https://cdn.materialdesignicons.com/3.2.89/css/materialdesignicons.min.css');
+@import url('https://fonts.googleapis.com/css?family=Montserrat+Alternates:500,800');
 
 // Variables
 @import "variables";
@@ -17,23 +17,16 @@
 
 // Partials
 @import "partials/articles";
+@import "partials/topics";
+@import "partials/instagram";
 @import "partials/cta";
-@import "partials/modal";
-@import "partials/tables";
-@import "partials/workshop";
-@import "partials/cart";
-@import "partials/checkout";
 
 
 // Components
 @import "components/icons";
-@import "components/navbar";
 @import "components/banners";
-@import "components/buttons";
 @import "components/slideshow";
+@import "components/navbar";
+@import "components/footer";
 @import "components/cards";
 @import "components/lists";
-@import "components/footer";
-@import "components/forms";
-@import "components/accordion";
-@import "components/user";

@@ -1,141 +1,20 @@
 body{
   color: $black-color;
-  background-color: #fdf9f7;
-
-  *{
-    letter-spacing: .04em;
-  }
+   overflow-x: hidden;
 }
-
-#landing-page{
-   background-color: white;
-}
-.divider{
-  height: 1px;
-  width: 100%;
-  background-color: $black-color;
-  border:none;
-}
-.wrapper{
+.img-filter{
+   filter: saturate(50%);
    @extend .transition;
-   &.active{
-      opacity: .6;
-   }
 }
-
-.about-book{
-   margin-top: 30px;
-
-   @media (min-width: $screen-sm-min) {
-      margin-top: 70px;
-   }
-
-   .col-sm-6{
-      margin-top: 20px;
-
-      @media (min-width: $screen-sm-min) {
-         margin-top: 0;
-      }
-   }
-}
-#body-content{
-   transition: .4s opacity;
-  &.transition{
-     transition: all ease-in .5s;
-    -webkit-transform: translateX(-80%);
-    -moz-transform: translateX(-80%);
-    transform: translateX(-80%);
-  }
-}
-
-.section-landing{
-   margin: 70px 0;
-
-   @media (max-width: $screen-xs-max) {
-      margin: 35px 0;
-   }
-
-   &__subtitle{
-      font-size: 32px;
-      font-weight: $font-weight-semibold;
-      font-family: $font-family-secondary;
-
-      @media (max-width: $screen-xs-max) {
-         font-size: 26px;
-      }
-   }
-   &__title{
-      font-size: 34px;
-      font-family: $font-family-secondary;
-      font-weight: $font-weight-bold;
-
-      @media (max-width: $screen-xs-max) {
-         font-size: 28px;
-      }
-   }
-   &__category{
-      margin-bottom: 55px;
-      font-weight: $font-weight-semibold !important;
-   }
-   &__header{
-      max-width: 60%;
-
-      @media (max-width: $screen-xs-max) {
-         max-width: 100%;
-      }
-
-      .text{
-         font-family: $font-family-secondary;
-         font-size: 24px;
-         line-height: 34px;
-         font-weight: $font-weight-semibold;
-      }
-   }
-
-   &__link{
-      display: block;
-      margin-top: 55px;
-   }
-
-   .editable{
-      h4{
-         font-family: $font-family-primary;
-         font-weight: $font-weight-semibold;
-         font-size: 14px;
-         line-height: 24px;
-         text-transform: uppercase;
-         margin: 30px 0;
-         letter-spacing: 1px;
-      }
-      p{
-         font-family: $font-family-secondary;
-         font-weight: $font-weight-semibold;
-         font-size: 20px;
-         line-height: 30px;
-      }
-   }
-}
-
-.section{
-
-  @media (max-width: $screen-xs-max) {
-    padding-top: 30px;
-  }
-}
-
 .editable{
 
   &.text{
-
     p{
-      font-family: $font-family-secondary;
       font-size: 20px;
       line-height: 38px;
     }
     h4{
       margin-top: 25px;
-      font-family: $font-family-secondary;
-      font-weight: $font-weight-semibold;
       font-style: italic;
       font-size: 30px;
       line-height: 40px;
@@ -164,10 +43,20 @@ body{
   }
   ul{
     li{
+      position: relative;
       list-style: none;
+      padding-left: 20px;
 
       &:nth-of-type(n+2){
         margin-top: 20px;
+      }
+      &::before{
+         content: '#';
+         position: absolute;
+         left: 0;
+         top: 0;
+         bottom: 0;
+         color: $pink-color;
       }
     }
   }
@@ -195,41 +84,32 @@ body{
 /**
  * Section
  */
-#body-content > .section{
-  border-bottom: 1px solid #cccccc;
-  padding-bottom: 20px;
-}
 .section{
   position: relative;
+   margin-top:30px;
+
+   @media (min-width: $screen-sm-min) {
+      margin-top:60px;
+   }
+
+   @media (min-width: $screen-md-min) {
+      margin-top:90px;
+   }
 
   &__header{
     margin-bottom: 30px;
 
     @media (min-width: $screen-sm-min) {
-      margin-bottom: 90px;
-    }
-
-    .category{
-      margin-bottom: 20px;
-
-      @media (min-width: $screen-sm-min) {
-        margin-bottom: 40px;
-      }
-    }
-  }
-
-  &__container{
-    margin-top: 20px;
-    margin-bottom: 40px;
-
-    @media (min-width: $screen-sm-min) {
-      margin-top: 30px;
       margin-bottom: 60px;
     }
   }
 
-  &--padding{
-    margin-top: 60px;
+  &__container{
+    margin-top: 30px;
+
+    @media (min-width: $screen-sm-min) {
+      margin-top: 60px;
+    }
   }
 }
 
@@ -242,43 +122,6 @@ body{
 .black-color{
   background-color: $black-color;
   padding: 70px 15px 30px;
-}
-.purple-bg-color{
-  background-color: rgba(199, 178, 222, 0.3);
-  padding: 55px 0;
-}
-.yellow-color{
-  background-color: rgba(255, 209, 0, 0.3);
-  padding: 55px 0;
-}
-
-.user-review-header{
-  margin-bottom: 20px;
-
-  @media (min-width: $screen-sm-min) {
-    margin-bottom: 50px;
-  }
-  .subtitle{
-
-    span{
-      font-size: 14px;
-      margin-left: 20px;
-
-      @media (min-width: $screen-sm-min) {
-        line-height: 42px;
-        margin-left: 10%;
-      }
-    }
-  }
-  .btn{
-    margin: 20px auto;
-    display: block;
-
-    @media (min-width: $screen-sm-min) {
-      margin: 0;
-      float: right !important;
-    }
-  }
 }
 
 /**
@@ -360,23 +203,6 @@ body{
   height: auto;
 }
 
-.breadcrumb{
-   li{
-      opacity: 1 !important;
-   }
-   > li + li:before{
-      content: '>';
-      color: black;
-   }
-  .breadcrumb-item{
-    font-size: 16px;
-    font-weight: $font-weight-regular;
-
-    &.active{
-    font-weight: $font-weight-semibold;
-    }
-  }
-}
 // CENTER CONTENT
 .abs-center{
   margin: auto;

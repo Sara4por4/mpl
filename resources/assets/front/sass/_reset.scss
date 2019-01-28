@@ -76,3 +76,13 @@ ol{
 	padding: 0;
 	list-style: none;
 }
+
+.container-fluid{
+	padding-left: 15px;
+	padding-right: 15px;
+
+	@media (min-width: $screen-sm-min) {
+		padding-left: 50px;
+		padding-right: 50px;
+	}
+}

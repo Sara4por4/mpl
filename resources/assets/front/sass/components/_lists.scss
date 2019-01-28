@@ -1,288 +1,142 @@
-.benefits-list{
+.teaser-list{
    &__element{
-      display: inline-block;
-
       &:nth-of-type(n+2){
-         margin-left: 15px;
+         margin-top: 30px;
+
+         @media (min-width: $screen-sm-min) {
+            margin-top: 0;
+            transform: translateY(-100px);
+         }
       }
    }
 }
-.topic-cards-list{
-  margin-top: 60px;
 
-  &__element{
-    &:nth-child(n+3){
-      margin-top: 20px;
+.values-list{
+   @media (min-width: $screen-sm-min) {
+      margin-top: 100px;
+   }
 
-      @media (min-width: $screen-sm-min) {
-        margin-top: 0;
+   &__element{
+      &:nth-of-type(n+2){
+         margin-top: 20px;
+
+         @media (min-width: $screen-sm-min) {
+            margin-top: 0;
+         }
       }
-    }
-  }
+   }
 }
 
-.teaser-card-list{
+.contacts-list{
 
-  &__element{
+   &__element{
+      &:nth-of-type(n+2){
+         margin-top: 15px;
 
-    &:first-child{
-      .teaser-card__caption{
-        background-color:rgba(250, 240, 235, 0.25);
+         @media (min-width: $screen-sm-min) {
+            margin-top: 60px;
+         }
+         @media (min-width: $screen-md-min) {
+            margin-top: 0;
+         }
       }
-    }
-    &:nth-child(3n-1){
-
-      .teaser-card__caption{
-        background-color: rgba(199, 178, 222, 0.3);
-      }
-    }
-    &:nth-child(3n){
-      #scrolldown{
-        display: none;
-      }
-      .teaser-card__caption{
-        background-color: rgba(160, 209, 202, 0.3);
-      }
-    }
-    &:nth-child(odd){
-      .teaser-card__image-wrapper{
-        top:25px;
-        bottom:60px;
-        right:25px;
-        left:25px;
-
-        @media (min-width: $screen-sm-min) {
-          top:50px;
-          bottom:50px;
-          right:50px;
-          left:50px;
-        }
-        @media (min-width: $screen-md-min) {
-          top:100px;
-          bottom:100px;
-          right:150px;
-          left:150px;
-        }
-      }
-    }
-    &:nth-child(even){
-      .teaser-card__scrolldown {
-        right: -17.5px;
-        left: initial;
-      }
-      .teaser-card__subtitles{
-        color: white;
-        position: absolute;
-        bottom: 50px;
-        left: 50px;
-      }
-      .teaser-card__figure{
-
-        @media (min-width: $screen-sm-min) {
-          float: right;
-        }
-      }
-      .teaser-card__caption{
-        @media (min-width: $screen-sm-min) {
-          float: left;
-        }
-      }
-    }
-  }
-
-  &--topics{
-    .teaser-card-list__element{
-      &:nth-of-type(3n-1),
-      &:nth-of-type(3n-2){
-
-        .teaser-card__image-wrapper{
-          top:25px;
-          bottom:60px;
-          right:25px;
-          left:25px;
-
-          @media (min-width: $screen-sm-min) {
-            top:50px;
-            bottom:50px;
-            right:50px;
-            left:50px;
-          }
-
-          @media (min-width: $screen-md-min) {
-            top:100px;
-            bottom:100px;
-            right:150px;
-            left:150px;
-          }
-        }
-        .teaser-card__subtitles{
-          color: initial;
-          position: relative;
-          bottom:0;
-          left:0;
-        }
-      }
-      &:last-of-type{
-        .teaser-card__image-wrapper{
-          top:0;
-          right:0;
-          bottom:0;
-          left:0;
-
-          @media (min-width: $screen-md-min) {
-            top:0;
-            bottom:0;
-            right:0;
-            left:0;
-          }
-        }
-        .teaser-card__subtitles{
-          color: white;
-          position: absolute;
-          bottom: 50px;
-          left: 50px;
-        }
-      }
-
-      .teaser-card__title{
-        margin-bottom: 40px;
-      }
-    }
-  }
-
-  &--about{
-
-    .teaser-card-list__element:first-of-type{
-
-      .teaser-card__caption{
-        background-color: rgba(160, 209, 202, 0.25) !important;
-      }
-    }
-    .teaser-card__image-wrapper{
-      top:50px !important;
-      bottom:90px !important;
-      right:50px !important;
-      left:50px !important;
-
-      @media (min-width: $screen-sm-min) {
-        top:100px !important;
-        bottom:100px !important;
-        right:150px !important;
-        left:150px !important;
-      }
-    }
-
-    .teaser-card__subtitles{
-      color: initial !important;
-      position: relative !important;
-      bottom:0 !important;
-      left:0 !important;
-    }
-
-    .teaser-card-list__element:last-of-type{
-      .teaser-card__scrolldown{
-        display: none;
-      }
-    }
-
-  }
+   }
 }
 
-.curated-list{
-  &__element{
 
-    &:nth-child(n+3){
-      margin-top: 30px;
-    }
+.services-list{
 
-    @media (min-width: $screen-sm-min) {
-      &:nth-child(n+3){
-        margin-top: 0;
+   &__element{
+      cursor: pointer;
+
+      &:hover{
+         .service-card__caption{
+            color: $pink-color;
+         }
       }
-      &:nth-child(n+4){
-        margin-top: 30px;
+      .service-card{
+         &__img{
+            height: 320px;
+            width: 100%;
+
+            @media (min-width: $screen-sm-min) {
+               height: 300px;
+               width: 80%;
+            }
+
+            @media (min-width: $screen-md-min) {
+               height: 400px;
+            }
+            @media (min-width: $screen-lg-min) {
+               height: 550px;
+            }
+         }
+         &__caption{
+            text-align: center;
+
+            @media (min-width: $screen-sm-min) {
+               text-align: left;
+            }
+         }
       }
-    }
-  }
+
+      &:nth-of-type(n+2){
+         margin-top: 35px;
+      }
+      &:nth-of-type(2n){
+
+         @media (min-width: $screen-sm-min) {
+            margin-top: 150px;
+            margin-bottom: 40px;
+         }
+         @media (min-width: $screen-md-min) {
+            margin-top: 250px;
+            margin-bottom: 80px;
+         }
+         .service-card{
+            &__img{
+               height: 210px;
+
+               @media (min-width: $screen-sm-min) {
+                  height: 240px;
+                  width: 100%;
+               }
+               @media (min-width: $screen-md-min) {
+                  height: 340px;
+                  width: 100%;
+               }
+               @media (min-width: $screen-lg-min) {
+                  height: 420px;
+                  width: 100%;
+               }
+            }
+            &__caption{
+               text-align: center;
+
+               @media (min-width: $screen-sm-min) {
+                  text-align: right;
+               }
+            }
+         }
+      }
+   }
 }
+.article-list{
+   &__element{
 
-.workshops-list{
-  &__element{
+      &:first-of-type{
 
-    &:nth-child(n+3){
-      margin-top: 30px;
-    }
-
-    &.slider{
-
-      &:nth-child(n+3){
-        margin-top: 0;
+         @media (min-width: $screen-sm-min) {
+            padding-right: 30px;
+         }
       }
+      &:nth-of-type(n+2){
+         margin-top: 40px;
 
-      .product-card__img{
-        height: 350px;
-
-        @media (min-width: $screen-sm-min) {
-          height: 550px;
-        }
+         @media (min-width: $screen-sm-min) {
+            padding-left: 30px;
+            margin-top: 0;
+         }
       }
-    }
-  }
-}
-
-.products-list{
-  &__element{
-
-    &:nth-child(n+3){
-      margin-top: 30px;
-    }
-
-    @media (min-width: $screen-sm-min) {
-      &:nth-child(n+3){
-        margin-top: 0;
-      }
-      &:nth-child(n+4){
-        margin-top: 30px;
-      }
-    }
-  }
-}
-
-.abc-list{
-
-  &__element{
-    font-family: $font-family-secondary;
-    font-size: 24px;
-
-    .alive{
-      color: black!important;
-      text-decoration: none !important;
-    }
-    .dead{
-      color: #cccccc;
-      text-decoration: line-through;
-    }
-
-    &:nth-child(n+3){
-      margin-top: 30px;
-    }
-
-    @media (min-width: $screen-sm-min) {
-      &:nth-child(n+3){
-        margin-top: 0;
-      }
-      &:nth-child(n+4){
-        margin-top: 30px;
-      }
-    }
-
-    @media (min-width: $screen-md-min) {
-      &:nth-child(n+4){
-        margin-top: 0;
-      }
-      &:nth-child(n+7){
-        margin-top: 30px;
-      }
-    }
-  }
+   }
 }

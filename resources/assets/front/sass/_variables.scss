@@ -3,48 +3,35 @@
  * Colors
  */
 $colors: (
-    'black'             : #131413,
-    'light-bege'        : #fdf9f7,
-    'bege'              : #faf0eb,
-    'light-pink'        : #ECC3B2,
-    'pink'              : #A85566,
-    'yellow'            : #FFD100,
-    'blue'              : #A0D1CA,
-    'purple'            : #C7B2DE,
-    'grey'             : #d7d7d7,
+    'black'             : #0a0a0a,
+    'grey'             : #bbbaba,
+    'brown'             : #a48242,
+    'bege'             : #e3d9c6,
+    'pink'             : #e24486,
+    'light-pink'        : #fedee3,
     'white'             : #fff,
-    'rose'             : #eeccbd,
-
 );
 
 /**
  * Color applications
  */
-
  $black-color                 : map-get($colors, 'black');
  $white-color                 : map-get($colors, 'white');
- $light-bege-color            : map-get($colors, 'light-bege');
  $bege-color                  : map-get($colors, 'bege');
+ $brown-color                  : map-get($colors, 'brown');
  $light-pink-color            : map-get($colors, 'light-pink');
  $pink-color                  : map-get($colors, 'pink');
- $yellow-color                : map-get($colors, 'yellow');
- $blue-color                  : map-get($colors, 'blue');
- $purple-color                : map-get($colors, 'purple');
  $grey-color                : map-get($colors, 'grey');
- $rose-color                : map-get($colors, 'rose');
-
-
 
 // Typography
 $font-family-icons: "material-design-iconic-font";
-$font-family-primary: 'Montserrat', sans-serif;
-$font-family-secondary: 'Cormorant Garamond', serif;
+$font-family-primary: 'Montserrat Alternates', sans-serif;
 $font-size-base: 14px;
 $line-height-base: 1.6;
 
 $font-weight-regular: 400;
-$font-weight-semibold: 600;
-$font-weight-bold: 700;
+$font-weight-medium: 500;
+$font-weight-extrabold: 800;
 
 // Body
 $body-bg: #fff;

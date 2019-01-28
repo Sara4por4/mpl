@@ -1,0 +1,196 @@
+.teaser-area{
+  position: relative;
+
+   &:hover{
+      .teaser-area__img{
+         filter: none;
+      }
+      .teaser-area__title{
+         .big-title{
+            text-decoration: none;
+            transform: translateX(10px);
+            color: $black-color;
+
+            @media (min-width: $screen-sm-min) {
+               transform: translateX(30px);
+            }
+         }
+      }
+   }
+  &__img{
+    width: 60%;
+    height: 260px;
+    @extend .full-img;
+    float: left;
+
+    @media (min-width: $screen-sm-min) {
+      height: 500px;
+      width: 40%;
+    }
+    @media (min-width: $screen-lg-min) {
+      height: 600px;
+      width: 35%;
+    }
+  }
+  &__text{
+      overflow: hidden;
+      max-height: 112px;
+
+      @media (min-width: $screen-sm-min) {
+         float: right;
+         width: 45%;
+         bottom: 0;
+         position: absolute;
+         right: 0;
+     }
+  }
+  &__title{
+   @extend .abs-center;
+   right: initial;
+   display: -ms-flexbox;
+   display: -webkit-flex;
+   display: flex;
+   -webkit-flex-direction: row;
+   -ms-flex-direction: row;
+   flex-direction: row;
+   -webkit-flex-wrap: nowrap;
+   -ms-flex-wrap: nowrap;
+   flex-wrap: nowrap;
+   -webkit-justify-content: flex-start;
+   -ms-flex-pack: start;
+   justify-content: flex-start;
+   -webkit-align-content: stretch;
+   -ms-flex-line-pack: stretch;
+   align-content: stretch;
+   -webkit-align-items: flex-start;
+   -ms-flex-align: start;
+   align-items: flex-start;
+   left: 28%;
+
+   @media (min-width: $screen-sm-min) {
+      left: 28%;
+      max-width: 60%;
+   }
+   @media (min-width: $screen-lg-min) {
+      max-width: 50%;
+      left: 23%;
+   }
+
+    .big-title{
+      overflow: hidden;
+      max-height: 330px;
+      display: block;
+      -webkit-order: 0;
+      -ms-flex-order: 0;
+      order: 0;
+      -webkit-flex: 0 1 auto;
+      -ms-flex: 0 1 auto;
+      flex: 0 1 auto;
+      -webkit-align-self: center;
+      -ms-flex-item-align: center;
+      align-self: center;
+
+      span{
+         font-size: 30px;
+         display: block;
+         // width: 44px;
+         // height: 44px;
+
+         @media (min-width: $screen-sm-min) {
+            padding-top: 10px;
+            line-height: 44px;
+         }
+      }
+      &:hover{
+         text-decoration: none;
+         color:$black-color;
+      }
+
+   }
+  }
+
+  &--right{
+     .teaser-area__img{
+        float: right;
+     }
+     .teaser-area__title{
+       float: left;
+       right: 28%;
+       left: initial;
+       text-align: right;
+       @media (min-width: $screen-lg-min) {
+          right: 23%;
+       }
+       span{
+      }
+     }
+ }
+   &--full{
+      margin-top: 30px;
+
+      @media (min-width: $screen-sm-min) {
+         margin-top: 0;
+      }
+      .teaser-area__img{
+         width: 50%;
+      }
+      .teaser-area__title{
+         overflow: hidden;
+         span{
+           display: inline-block;
+         }
+      }
+      .teaser-area__text{
+         display: none;
+
+         @media (min-width: $screen-sm-min) {
+            display: block;
+         }
+      }
+   }
+}
+
+.value-card{
+   text-align: center;
+   border: 2px solid $black-color;
+   padding: 25px;
+
+   @media (min-width: $screen-sm-min) {
+      padding: 70px 20px;
+   }
+   @media (min-width: $screen-md-min) {
+      padding: 70px 30px 50px;
+      min-height: 395px;
+   }
+   @media (min-width: $screen-lg-min) {
+      min-height: 334px;
+   }
+
+   &__title{
+      background-color: white;
+
+      @media (min-width: $screen-sm-min) {
+         margin-top: -95px;
+      }
+   }
+   &__subtitle{
+      margin-bottom: 25px;
+   }
+   &__caption{
+      margin-top: 25px;
+   }
+}
+
+.service-card{
+   &__img{
+      @extend .full-img;
+   }
+   &__caption{
+      margin-top: 15px;
+      @extend .transition;
+
+      @media (min-width: $screen-sm-min) {
+         margin-top: 30px;
+      }
+   }
+}
