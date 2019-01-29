@@ -38,7 +38,7 @@
 
 
 <div class="section">
-  <div class="container-fluid">
+  <div class="container">
 
    @include('front.components.cta', [
    'title' => 'Are you one of us? Do you want to be part of the team?',

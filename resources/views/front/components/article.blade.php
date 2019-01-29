@@ -1,7 +1,7 @@
 <article class="article">
    <div class="row">
       <div class="col-sm-6">
-         <h1 class="article__title subtitle subtitle--extrabold">{{ $title }}</h1>
+         <h1 class="article__title title title--extrabold">{{ $title }}</h1>
          <div class="text editable">
             {!! $text !!}
          </div>

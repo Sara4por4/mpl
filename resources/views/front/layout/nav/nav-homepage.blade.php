@@ -11,7 +11,7 @@
       <div class="navbar-collapse collapse" id="menu">
          <ul class="navbar__menu">
            <li><a href="{{url('/wow')}}">wow effect</a></li>
-           <li><a href="{{url('/weare')}}">what we are</a></li>
+           <li><a href="{{url('/weare')}}">who we are</a></li>
            <li><a href="{{url('/wedo')}}">what we do</a></li>
            <li><a href="{{url('/wedone')}}">what we've done</a></li>
            <li><a href="{{url('/contacts')}}">contact</a></li>

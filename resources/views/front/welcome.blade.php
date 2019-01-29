@@ -34,23 +34,13 @@
 <div class="section">
   <div class="container-fluid">
 
-     <div class="teaser-list">
-        <div class="teaser-list__element" data-aos="fade-right">
-           <div class="teaser-area teaser-area--left clearfix">
-            <div class="teaser-area__img img-filter" style="background-image:url(front/img/photos/photo2.jpg)"></div>
-            <div class="teaser-area__title">
-              <a class="big-title" href="">weekly inspiration <span class="mdi mdi-trending-neutral"></span></a>
-            </div>
+     <div class="teaser-list__element" data-aos="fade-left">
+        <div class="teaser-area teaser-area--right clearfix">
+          <div class="teaser-area__img img-filter" style="background-image:url(front/img/photos/photo2.jpg)"></div>
+          <div class="teaser-area__title">
+             <a class="big-title" href="">weekly inspiration <span class="mdi mdi-trending-neutral"></span></a>
           </div>
-        </div>
-        <div class="teaser-list__element" data-aos="fade-left">
-           <div class="teaser-area teaser-area--right clearfix">
-             <div class="teaser-area__img img-filter" style="background-image:url(front/img/photos/photo2.jpg)"></div>
-             <div class="teaser-area__title">
-                <a class="big-title" href="">weekly inspiration <span class="mdi mdi-trending-neutral"></span></a>
-             </div>
-          </div>
-        </div>
+       </div>
      </div>
   </div>
 
@@ -73,17 +63,17 @@
 
      <div class="topics clearfix" data-aos="fade-up">
         <div class="topics__element active">
-           @include ('front.components.topic', [
+           @include ('front.components.topic-homepage', [
              'image' => 'front/img/photos/photo6.jpg',
              'title' => 'events',
-             'link' => 'wedone',
+             'link' => 'wedo',
             ])
         </div>
         <div class="topics__element">
-           @include ('front.components.topic', [
+           @include ('front.components.topic-homepage', [
              'image' => 'front/img/photos/photo5.jpg',
              'title' => 'people',
-             'link' => 'wedone',
+             'link' => 'wedo',
             ])
         </div>
      </div>

@@ -52,6 +52,7 @@
 
 
     <!-- JavaScripts -->
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
     <script src="{{url('/')}}/front/js/app.js"></script>
     <script src="{{url('/')}}/front/js/actions.js"></script>

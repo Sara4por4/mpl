@@ -1,79 +1,48 @@
 
-.cta{
+.cta-wrapper{
    border: 2px solid $brown-color;
    padding: 30px;
 
    @media (min-width: $screen-sm-min) {
-      max-width: 400px;
-      padding: 60px 30px;
-      display: inline-block;
-      vertical-align: top;
+      padding: 40px;
    }
+
+   &:hover{
+      cursor: pointer;
+
+      .cta__link{
+         color: $pink-color;
+         text-decoration: underline;
+      }
+   }
+}
+.cta{
+   margin-top: 30px;
+
   &__header{
      margin-bottom: 30px;
+     text-align: center;
  }
   &__caption{
+     text-align: center;
+
      @media (min-width: $screen-sm-min) {
         margin-bottom: 30px;
      }
   }
    &__link-wrapper{
 
-      @media (min-width: $screen-sm-min) {
-         display: inline-block;
-         vertical-align: top;
-      }
    }
 
    &__link{
-       margin-top: -20px;
-      text-align: right;
+      text-align: center;
 
-       @media (min-width: $screen-sm-min) {
-          margin-top: 20px;
-          margin-top: 0;
-          text-align: left;
-          max-width: 200px;
-          height: 470px;
-         transform: translateX(-30px);
-         display: -ms-flexbox;
-         display: -webkit-flex;
-         display: flex;
-         -webkit-flex-direction: row;
-         -ms-flex-direction: row;
-         flex-direction: row;
-         -webkit-flex-wrap: nowrap;
-         -ms-flex-wrap: nowrap;
-         flex-wrap: nowrap;
-         -webkit-justify-content: flex-start;
-         -ms-flex-pack: start;
-         justify-content: flex-start;
-         -webkit-align-content: stretch;
-         -ms-flex-line-pack: stretch;
-         align-content: stretch;
-         -webkit-align-items: flex-start;
-         -ms-flex-align: start;
-         align-items: flex-start;
-       }
-       @media (min-width: $screen-md-min) {
-          max-width: 510px;
-      }
-      a{
-      -webkit-order: 0;
-      -ms-flex-order: 0;
-      order: 0;
-      -webkit-flex: 0 1 auto;
-      -ms-flex: 0 1 auto;
-      flex: 0 1 auto;
-      -webkit-align-self: center;
-      -ms-flex-item-align: center;
-      align-self: center;
-      @media (min-width: $screen-sm-min) {
-        max-width: 70%;
-      }
       @media (min-width: $screen-md-min) {
-        max-width: 65%;
+         margin-top: -90px;
       }
+
+      a{
+         background-color: white;
          span{
             display: block;
          }

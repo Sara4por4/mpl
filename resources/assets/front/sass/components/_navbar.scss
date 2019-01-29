@@ -92,11 +92,11 @@
      padding-top: 5px;
 
     @media (min-width: $screen-sm-min) {
-      padding-bottom: 10px;
+      // padding-bottom: 10px;
       padding-top: 20px;
     }
     @media (min-width: $screen-lg-min) {
-      padding-top: 50px;
+      padding-top: 30px;
     }
   }
 
@@ -105,7 +105,7 @@
     width: 100%;
     display: block;
     text-align: center;
-    padding: 10px 0;
+    padding: 10px 0 0;
 
       @media (min-width: $screen-sm-min) {
          padding-top: 40px;

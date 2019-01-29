@@ -17,7 +17,7 @@
 <section class="section">
    <div class="container">
 
-      <div class="section__header">
+      <div class="section__header text-center">
          <h2 class="title">Why Portohost?</h2>
       </div>
 
