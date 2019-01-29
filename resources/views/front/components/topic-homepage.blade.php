@@ -7,19 +7,19 @@
 
          <ul class="topic__list">
             <li>
-              <a href="{{ $link }}">Party <span class="mdi mdi-trending-neutral"></span></a>
+              <a id="nav-party-tab" href="{{ $link }}">Party <span class="mdi mdi-trending-neutral"></span></a>
            </li>
            <li>
-              <a href="{{ $link }}">Corporate <span class="mdi mdi-trending-neutral"></span></a>
+              <a id="nav-corporate-tab" href="{{ $link }}">Corporate <span class="mdi mdi-trending-neutral"></span></a>
            </li>
            <li>
-              <a href="{{ $link }}">Wedding <span class="mdi mdi-trending-neutral"></span></a>
+              <a id="nav-party-tab" href="{{ $link }}">Wedding <span class="mdi mdi-trending-neutral"></span></a>
            </li>
            <li>
-              <a href="{{ $link }}">Blogger Event <span class="mdi mdi-trending-neutral"></span></a>
+              <a id="nav-party-tab" href="{{ $link }}">Blogger Event <span class="mdi mdi-trending-neutral"></span></a>
            </li>
            <li>
-              <a href="{{ $link }}">Home Project <span class="mdi mdi-trending-neutral"></span></a>
+              <a id="nav-party-tab" href="{{ $link }}">Home Project <span class="mdi mdi-trending-neutral"></span></a>
            </li>
          </ul>
       </div>
@@ -30,25 +30,16 @@
 @push('scripts')
 <script>
 
-   $(".topic__list #1 a").hover(function(){
+
+   $(".topic__list #nav-party-tab").hover(function(){
       $('.active .topic__img').css("background-image", "url(front/img/photos/photo3.jpg)");
       }, function(){
       $('.active .topic__img').css("background-image", "url(front/img/photos/photo4.jpg)");
    });
-   $(".topic__list #2 a").hover(function(){
+   $(".topic__list #nav-corporate-tab").hover(function(){
       $('.active .topic__img').css("background-image", "url(front/img/photos/photo2.jpg)");
       }, function(){
       $('.active .topic__img').css("background-image", "url(front/img/photos/photo5.jpg)");
-   });
-   $(".topic__list #3 a").hover(function(){
-      $('.active .topic__img').css("background-image", "url(front/img/photos/photo1.jpg)");
-      }, function(){
-      $('.active .topic__img').css("background-image", "url(front/img/photos/photo6.jpg)");
-   });
-   $(".topic__list #4 a").hover(function(){
-      $('.active .topic__img').css("background-image", "url(front/img/photos/photo3.jpg)");
-      }, function(){
-      $('.active .topic__img').css("background-image", "url(front/img/photos/photo2.jpg)");
    });
 
 </script>

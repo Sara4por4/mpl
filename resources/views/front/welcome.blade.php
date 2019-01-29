@@ -59,7 +59,7 @@
 </div>
 
 <section class="section">
-  <div class="container-fluid">
+  <div class="container">
 
      <div class="topics clearfix" data-aos="fade-up">
         <div class="topics__element active">

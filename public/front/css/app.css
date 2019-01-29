@@ -15830,6 +15830,12 @@ a:hover {
   }
 }
 
+@media (min-width: 992px) {
+  .topic__wrapper {
+    height: 560px;
+  }
+}
+
 .topic__title {
   z-index: 1;
   font-size: 20px;
@@ -15881,6 +15887,7 @@ a:hover {
 @media (min-width: 768px) {
   .topic__list {
     display: none;
+    margin-top: 30px;
   }
 }
 

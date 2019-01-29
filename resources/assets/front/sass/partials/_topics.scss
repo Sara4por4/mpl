@@ -12,6 +12,9 @@
          padding: 50px 0;
          width: 30%;
       }
+      @media (min-width: $screen-lg-min) {
+         // width: 40%;
+      }
 
       &:hover{
          .topic__img{
@@ -25,6 +28,9 @@
 
          @media (min-width: $screen-sm-min) {
             width: 70%;
+         }
+         @media (min-width: $screen-lg-min) {
+            // width: 60%;
          }
 
          .topic__list{
@@ -130,6 +136,9 @@
       @media (min-width: $screen-sm-min) {
          height: 200px;
       }
+      @media (min-width: $screen-md-min) {
+         height: 560px;
+      }
    }
    &__title{
       @extend .transition;
@@ -171,6 +180,7 @@
 
       @media (min-width: $screen-sm-min) {
          display: none;
+         margin-top: 30px;
          // display: block;
          // opacity: 0;
       }
